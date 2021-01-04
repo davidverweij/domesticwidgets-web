@@ -1,0 +1,567 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="profile" href="http://gmpg.org/xfn/11">
+
+        <script>
+        (function (exports, d) {
+            var _isReady = false,
+                _event,
+                _fns = [];
+
+            function onReady(event) {
+                d.removeEventListener("DOMContentLoaded", onReady);
+                _isReady = true;
+                _event = event;
+                _fns.forEach(function (_fn) {
+                    var fn = _fn[0],
+                        context = _fn[1];
+                    fn.call(context || exports, window.jQuery);
+                });
+            }
+
+            function onReadyIe(event) {
+                if (d.readyState === "complete") {
+                    d.detachEvent("onreadystatechange", onReadyIe);
+                    _isReady = true;
+                    _event = event;
+                    _fns.forEach(function (_fn) {
+                        var fn = _fn[0],
+                            context = _fn[1];
+                        fn.call(context || exports, event);
+                    });
+                }
+            }
+
+            d.addEventListener && d.addEventListener("DOMContentLoaded", onReady) ||
+            d.attachEvent && d.attachEvent("onreadystatechange", onReadyIe);
+
+            function domReady(fn, context) {
+                if (_isReady) {
+                    fn.call(context, _event);
+                }
+
+                _fns.push([fn, context]);
+            }
+
+            exports.mesmerizeDomReady = domReady;
+        })(window, document);
+    </script>
+    <title>Domestic Widgets &#8211; Plug and Say</title>
+<link rel='dns-prefetch' href='//fonts.googleapis.com' />
+<link rel='dns-prefetch' href='//netdna.bootstrapcdn.com' />
+<link rel='dns-prefetch' href='//s.w.org' />
+<link rel="alternate" type="application/rss+xml" title="Domestic Widgets &raquo; Feed" href="./feed/index.html" />
+<link rel="alternate" type="application/rss+xml" title="Domestic Widgets &raquo; Comments Feed" href="./comments/feed/index.html" />
+		<script type="text/javascript">
+			window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/13.0.1\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/13.0.1\/svg\/","svgExt":".svg","source":{"concatemoji":".\/wp-includes\/js\/wp-emoji-release.min.js?ver=5.6"}};
+			!function(e,a,t){var r,n,o,i,p=a.createElement("canvas"),s=p.getContext&&p.getContext("2d");function c(e,t){var a=String.fromCharCode;s.clearRect(0,0,p.width,p.height),s.fillText(a.apply(this,e),0,0);var r=p.toDataURL();return s.clearRect(0,0,p.width,p.height),s.fillText(a.apply(this,t),0,0),r===p.toDataURL()}function l(e){if(!s||!s.fillText)return!1;switch(s.textBaseline="top",s.font="600 32px Arial",e){case"flag":return!c([127987,65039,8205,9895,65039],[127987,65039,8203,9895,65039])&&(!c([55356,56826,55356,56819],[55356,56826,8203,55356,56819])&&!c([55356,57332,56128,56423,56128,56418,56128,56421,56128,56430,56128,56423,56128,56447],[55356,57332,8203,56128,56423,8203,56128,56418,8203,56128,56421,8203,56128,56430,8203,56128,56423,8203,56128,56447]));case"emoji":return!c([55357,56424,8205,55356,57212],[55357,56424,8203,55356,57212])}return!1}function d(e){var t=a.createElement("script");t.src=e,t.defer=t.type="text/javascript",a.getElementsByTagName("head")[0].appendChild(t)}for(i=Array("flag","emoji"),t.supports={everything:!0,everythingExceptFlag:!0},o=0;o<i.length;o++)t.supports[i[o]]=l(i[o]),t.supports.everything=t.supports.everything&&t.supports[i[o]],"flag"!==i[o]&&(t.supports.everythingExceptFlag=t.supports.everythingExceptFlag&&t.supports[i[o]]);t.supports.everythingExceptFlag=t.supports.everythingExceptFlag&&!t.supports.flag,t.DOMReady=!1,t.readyCallback=function(){t.DOMReady=!0},t.supports.everything||(n=function(){t.readyCallback()},a.addEventListener?(a.addEventListener("DOMContentLoaded",n,!1),e.addEventListener("load",n,!1)):(e.attachEvent("onload",n),a.attachEvent("onreadystatechange",function(){"complete"===a.readyState&&t.readyCallback()})),(r=t.source||{}).concatemoji?d(r.concatemoji):r.wpemoji&&r.twemoji&&(d(r.twemoji),d(r.wpemoji)))}(window,document,window._wpemojiSettings);
+		</script>
+		<style type="text/css">
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+	<link rel='stylesheet' id='companion-bundle-css'   data-href='./wp-content/plugins/mesmerize-companion/theme-data/mesmerize/assets/css/companion.bundle.min.css?ver=1.6.110' type='text/css' media='all' />
+<link rel='stylesheet' id='wp-block-library-css'  href='./wp-includes/css/dist/block-library/style.min.css?ver=5.6' type='text/css' media='all' />
+<link rel='stylesheet' id='bwg_fonts-css'  href='./wp-content/plugins/photo-gallery/css/bwg-fonts/fonts.css?ver=0.0.1' type='text/css' media='all' />
+<link rel='stylesheet' id='bwg_frontend-css'  href='./wp-content/plugins/photo-gallery/css/styles.min.css?ver=1.5.15' type='text/css' media='all' />
+<link rel='stylesheet' id='mesmerize-style-css'  href='./wp-content/themes/mesmerize/style.min.css?ver=1.6.81' type='text/css' media='all' />
+<style id='mesmerize-style-inline-css' type='text/css'>
+img.logo.dark, img.custom-logo{width:auto;max-height:70px !important;}
+/** cached kirki style */@media screen and (min-width: 768px){.header-homepage{background-position:center top;}.header{background-position:center center;}}.header-homepage:not(.header-slide).color-overlay:before{background:#000000;}.header-homepage:not(.header-slide) .background-overlay,.header-homepage:not(.header-slide).color-overlay::before{opacity:0.25;}.header-homepage-arrow{font-size:calc( 52px * 0.84 );bottom:64px;background:rgba(135,96,96,0);}.header-homepage-arrow > i.fa{width:52px;height:52px;}.header-homepage-arrow > i{color:rgb(255,255,255);}.mesmerize-front-page .header-separator .svg-white-bg{fill:#ffffff!important;}.mesmerize-front-page .header-separator svg{height:114px!important;}.header.color-overlay:after{filter:invert(0%) ;}.header-homepage .header-description-row{padding-top:10%;padding-bottom:20%;}.inner-header-description{padding-top:6%;padding-bottom:4%;}.mesmerize-inner-page .navigation-bar.bordered{border-bottom-color:rgba(255, 255, 255, 0.5);border-bottom-width:1px;border-bottom-style:solid;}@media screen and (max-width:767px){.header-homepage .header-description-row{padding-top:10%;padding-bottom:20%;}}@media only screen and (min-width: 768px){.header-content .align-holder{width:53%!important;}.inner-header-description{text-align:center!important;}}
+</style>
+<link rel='stylesheet' id='mesmerize-style-bundle-css'  href='./wp-content/themes/mesmerize/assets/css/theme.bundle.min.css?ver=1.6.81' type='text/css' media='all' />
+<link rel='stylesheet' id='mesmerize-fonts-css'   data-href='https://fonts.googleapis.com/css?family=Open+Sans%3A300%2C400%2C600%2C700%7CMuli%3A300%2C300italic%2C400%2C400italic%2C600%2C600italic%2C700%2C700italic%2C900%2C900italic%7CPlayfair+Display%3A400%2C400italic%2C700%2C700italic&#038;subset=latin%2Clatin-ext' type='text/css' media='all' />
+<link rel='stylesheet' id='fontawesome-css'  href='//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.min.css?ver=1.3.9' type='text/css' media='all' />
+<!--[if IE 7]>
+<link rel='stylesheet' id='fontawesome-ie-css'  href='//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome-ie7.min.css?ver=1.3.9' type='text/css' media='all' />
+<![endif]-->
+		<style>
+			/* Accessible for screen readers but hidden from view */
+			.fa-hidden { position:absolute; left:-10000px; top:auto; width:1px; height:1px; overflow:hidden; }
+			.rtl .fa-hidden { left:10000px; }
+			.fa-showtext { margin-right: 5px; }
+		</style>
+		<script type='text/javascript' src='./wp-includes/js/jquery/jquery.min.js?ver=3.5.1' id='jquery-core-js'></script>
+<script type='text/javascript' id='jquery-core-js-after'>
+    
+        (function () {
+            function setHeaderTopSpacing() {
+
+                setTimeout(function() {
+                  var headerTop = document.querySelector('.header-top');
+                  var headers = document.querySelectorAll('.header-wrapper .header,.header-wrapper .header-homepage');
+
+                  for (var i = 0; i < headers.length; i++) {
+                      var item = headers[i];
+                      item.style.paddingTop = headerTop.getBoundingClientRect().height + "px";
+                  }
+
+                    var languageSwitcher = document.querySelector('.mesmerize-language-switcher');
+
+                    if(languageSwitcher){
+                        languageSwitcher.style.top = "calc( " +  headerTop.getBoundingClientRect().height + "px + 1rem)" ;
+                    }
+                    
+                }, 100);
+
+             
+            }
+
+            window.addEventListener('resize', setHeaderTopSpacing);
+            window.mesmerizeSetHeaderTopSpacing = setHeaderTopSpacing
+            mesmerizeDomReady(setHeaderTopSpacing);
+        })();
+    
+    
+</script>
+<script type='text/javascript' src='./wp-includes/js/jquery/jquery-migrate.min.js?ver=3.3.2' id='jquery-migrate-js'></script>
+<script type='text/javascript' id='bwg_frontend-js-extra'>
+/* <![CDATA[ */
+var bwg_objectsL10n = {"bwg_field_required":"field is required.","bwg_mail_validation":"This is not a valid email address.","bwg_search_result":"There are no images matching your search.","bwg_select_tag":"Select Tag","bwg_order_by":"Order By","bwg_search":"Search","bwg_show_ecommerce":"Show Ecommerce","bwg_hide_ecommerce":"Hide Ecommerce","bwg_show_comments":"Show Comments","bwg_hide_comments":"Hide Comments","bwg_restore":"Restore","bwg_maximize":"Maximize","bwg_fullscreen":"Fullscreen","bwg_exit_fullscreen":"Exit Fullscreen","bwg_search_tag":"SEARCH...","bwg_tag_no_match":"No tags found","bwg_all_tags_selected":"All tags selected","bwg_tags_selected":"tags selected","play":"Play","pause":"Pause","is_pro":"","bwg_play":"Play","bwg_pause":"Pause","bwg_hide_info":"Hide info","bwg_show_info":"Show info","bwg_hide_rating":"Hide info","bwg_show_rating":"Show info","ok":"Ok","cancel":"Cancel","select_all":"Select all"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='./wp-content/plugins/photo-gallery/js/scripts.min.js?ver=1.5.15' id='bwg_frontend-js'></script>
+<link rel="https://api.w.org/" href="./wp-json/index.html" /><link rel="alternate" type="application/json" href="./wp-json/wp/v2/pages/15/index.html" /><link rel="EditURI" type="application/rsd+xml" title="RSD" href="./xmlrpc.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="./wp-includes/wlwmanifest.xml" /> 
+<meta name="generator" content="WordPress 5.6" />
+<link rel="canonical" href="./index.html" />
+<link rel='shortlink' href='./index.html' />
+<link rel="alternate" type="application/json+oembed" href="./wp-json/oembed/1.0/embed/index.html?url=https%3A%2F%2F%2F" />
+<link rel="alternate" type="text/xml+oembed" href="./wp-json/oembed/1.0/embed/index.html?url=https%3A%2F%2F%2F&#038;format=xml" />
+    <style data-name="header-overlap-with">
+        @media screen and (min-width: 768px) {
+            .mesmerize-front-page.overlap-first-section:not(.mesmerize-front-page-with-slider) .header-homepage {
+                padding-bottom: 400px;
+            }
+
+            .mesmerize-front-page.overlap-first-section:not(.mesmerize-front-page-with-slider) .page-content div[data-overlap]:first-of-type > div:not([class*="section-separator"]) {
+                margin-top: -400px;
+            }
+        }
+    </style>
+    
+    
+    <style type="text/css" data-name="custom-mobile-image-position">
+        @media screen and (max-width: 767px) {
+            /*Custom mobile position*/
+        .header-homepage {
+            background-position: 100% 0px;
+        }
+        }
+    </style>
+
+    
+        <script type="text/javascript" data-name="async-styles">
+        (function () {
+            var links = document.querySelectorAll('link[data-href]');
+            for (var i = 0; i < links.length; i++) {
+                var item = links[i];
+                item.href = item.getAttribute('data-href')
+            }
+        })();
+    </script>
+    <style type="text/css">.recentcomments a{display:inline !important;padding:0 !important;margin:0 !important;}</style><style type="text/css" id="custom-background-css">
+body.custom-background { background-color: #ffffff; }
+</style>
+	<link rel="icon" href="./wp-content/uploads/2018/04/cropped-DomesticWidgetsLogo-big-02-32x32.png" sizes="32x32" />
+<link rel="icon" href="./wp-content/uploads/2018/04/cropped-DomesticWidgetsLogo-big-02-192x192.png" sizes="192x192" />
+<link rel="apple-touch-icon" href="./wp-content/uploads/2018/04/cropped-DomesticWidgetsLogo-big-02-180x180.png" />
+<meta name="msapplication-TileImage" content="./wp-content/uploads/2018/04/cropped-DomesticWidgetsLogo-big-02-270x270.png" />
+		<style type="text/css" id="wp-custom-css">
+			/* FRONT PAGE */
+
+body{
+	color:#000;
+	text-align:left;
+}
+
+.signup{
+	color: rgb(3,169,244)!important;
+}
+
+.post-item{
+	border:none;
+}
+
+.icon-2x{
+	font-size:1.4em!important;
+}
+
+.wp-post-image{
+	display:none;
+}
+
+.post-item .post-content-single{
+	padding-top:0;
+}
+
+.nav-links a{
+	color:black!important;
+}
+
+h1.hero-title{
+	font-weight:800;
+	font-size:4em;
+}
+
+h2{
+	font-weight:800;
+}
+
+#examples .space-bottom {
+	margin-bottom:0;
+	margin-top:.5rem;
+}
+#examples .spaced-cols > div {
+	margin-bottom:0.5rem;
+}
+
+#video {
+	background-color: rgb(259,160,89)!important;
+	box-shadow: 10px 1px 10px 1px rgba(74,74,74,.3),0 4px 10px rgba(0,0,0,.08);
+}
+
+#video h2 {
+	text-align:left;
+}
+
+.section-title-col, .text-center {
+	text-align:left;
+}
+
+p.header-subtitle{
+	font-weight:600;
+}
+
+.button{
+	background-color:#3C424F!important;
+border-color:rgb(259,160,89)!important;
+}
+
+.a, .read-more, li:hover a ,li > a:hover {
+color:rgb(259,160,89)!important;
+}
+
+li > a {
+border-bottom-color:rgb(259,160,89)!important;
+}
+
+i.fa.color1 {
+    color: #3C424F;
+}
+
+.contact-form-wrapper input[type="submit"]{
+	background-color:#3C424F;
+	border:none;
+}
+
+.card {
+background:rgb(0,0,0,0);
+	border:none;
+box-shadow:none;
+}
+
+.contact-form-wrapper label{
+color:white;
+}
+
+.recaptcha_class{
+float:right;
+ padding-bottom:10px;
+}		</style>
+		    <style id="page-content-custom-styles">
+        [data-id="about--1"] .overlay-box .overlay-box-offset{
+	transform:translate(4%,2%);
+	width:100%;
+	height:100%;
+	z-index:-1;
+	border-color:transparent;
+	background-color:rgb(253, 163, 89);
+
+}
+    </style>
+        <style data-name="background-content-colors">
+        .mesmerize-inner-page .page-content,
+        .mesmerize-inner-page .content,
+        .mesmerize-front-page.mesmerize-content-padding .page-content {
+            background-color: #ffffff;
+        }
+    </style>
+    </head>
+
+<body class="home page-template page-template-page-templates page-template-homepage page-template-page-templateshomepage-php page page-id-15 custom-background wp-custom-logo mesmerize-front-page mesmerize-content-no-padding">
+
+
+<div id="page-top" class="header-top homepage">
+            <div class="header-top-bar">
+            <div class="">
+                <div class="header-top-bar-inner row middle-xs start-xs">
+                        <div class="header-top-bar-area  col-xs area-left">
+                  <div class="top-bar-field" data-type="group"   data-dynamic-mod="true">
+              <i class="fa fa-angle-right"></i>
+              <span>A project by Northumbria University Newcastle</span>
+          </div>
+              </div>
+                            <div class="header-top-bar-area  col-xs-fit area-right">
+            </div>
+                    </div>
+            </div>
+        </div>
+            <div class="navigation-bar coloured-nav homepage"  data-sticky='0'  data-sticky-mobile='1'  data-sticky-to='top' >
+    <div class="navigation-wrapper">
+    	<div class="row basis-auto">
+	        <div class="logo_col col-xs col-sm-fit">
+	            <a href="./index.html" class="custom-logo-link" rel="home" aria-current="page"><img width="811" height="574" src="./wp-content/uploads/2018/04/cropped-DomesticWidgetsLogo-small-1.png" class="custom-logo" alt="Domestic Widgets" srcset="./wp-content/uploads/2018/04/cropped-DomesticWidgetsLogo-small-1.png 811w, ./wp-content/uploads/2018/04/cropped-DomesticWidgetsLogo-small-1-300x212.png 300w, ./wp-content/uploads/2018/04/cropped-DomesticWidgetsLogo-small-1-768x544.png 768w" sizes="(max-width: 811px) 100vw, 811px" /></a>	        </div>
+	        <div class="main_menu_col col-xs">
+	            <div id="mainmenu_container" class="row"><ul id="main_menu" class="active-line-bottom main-menu dropdown-menu"><li id="menu-item-22" class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-home menu-item-22"><a href="./index.html#page-top" aria-current="page">HOME</a></li>
+<li id="menu-item-487" class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-home menu-item-487"><a href="./index.html#video" aria-current="page">HOW IT WORKS</a></li>
+<li id="menu-item-348" class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-home menu-item-348"><a href="./index.html#examples" aria-current="page">EXAMPLES</a></li>
+<li id="menu-item-179" class="menu-item menu-item-type-custom menu-item-object-custom social-icon twitter menu-item-179"><a href="https://twitter.com/DomesticWidgets"><i class='icon-2x icon-twitter'></i><span class='fa-hidden'>Twitter</span></a></li>
+<li id="menu-item-496" class="menu-item menu-item-type-custom menu-item-object-custom social-icon facebook menu-item-496"><a href="https://www.facebook.com/domesticwidgets"><i class='icon-2x icon-facebook'></i><span class='fa-hidden'>Facebook</span></a></li>
+</ul></div>    <a href="#" data-component="offcanvas" data-target="#offcanvas-wrapper" data-direction="right" data-width="300px" data-push="false">
+        <div class="bubble"></div>
+        <i class="fa fa-bars"></i>
+    </a>
+    <div id="offcanvas-wrapper" class="hide force-hide  offcanvas-right">
+        <div class="offcanvas-top">
+            <div class="logo-holder">
+                <a href="./index.html" class="custom-logo-link" rel="home" aria-current="page"><img width="811" height="574" src="./wp-content/uploads/2018/04/cropped-DomesticWidgetsLogo-small-1.png" class="custom-logo" alt="Domestic Widgets" srcset="./wp-content/uploads/2018/04/cropped-DomesticWidgetsLogo-small-1.png 811w, ./wp-content/uploads/2018/04/cropped-DomesticWidgetsLogo-small-1-300x212.png 300w, ./wp-content/uploads/2018/04/cropped-DomesticWidgetsLogo-small-1-768x544.png 768w" sizes="(max-width: 811px) 100vw, 811px" /></a>            </div>
+        </div>
+        <div id="offcanvas-menu" class="menu-main-menu-container"><ul id="offcanvas_menu" class="offcanvas_menu"><li class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-home menu-item-22"><a href="./index.html#page-top" aria-current="page">HOME</a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-home menu-item-487"><a href="./index.html#video" aria-current="page">HOW IT WORKS</a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-home menu-item-348"><a href="./index.html#examples" aria-current="page">EXAMPLES</a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom social-icon twitter menu-item-179"><a href="https://twitter.com/DomesticWidgets"><i class='icon-2x icon-twitter'></i><span class='fa-hidden'>Twitter</span></a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom social-icon facebook menu-item-496"><a href="https://www.facebook.com/domesticwidgets"><i class='icon-2x icon-facebook'></i><span class='fa-hidden'>Facebook</span></a></li>
+</ul></div>
+            </div>
+    	        </div>
+	    </div>
+    </div>
+</div>
+</div>
+
+
+<div id="page" class="site">
+
+            <div class="header-wrapper">
+            <div  class='header-homepage  color-overlay' style='; background-image:url(&quot;./wp-content/uploads/2019/02/DomesticWidgets_Interactions_1_smaller.jpg&quot;); background-color:#FFFFFF' data-parallax-depth='20'>
+                                                
+    <div class="header-description gridContainer content-on-left">
+        <div class="row header-description-row">
+    <div class="header-content header-content-left col-sm-12 col-xs-12">
+        <div class="align-holder left">
+            <h1 class="hero-title">DOMESTIC WIDGETS</h1><p class="header-subtitle">Do you enjoy family crafts at home with your family? Do you and your child(ren) like to draw, paint, cut, glue, tape, sew, bake or craft in any other way?  
+<br><br>You can now bring your home crafts to life! Using a tiny circuit and motor, you can let your craft project move and behave by connecting them to real-time data, such as the weather, or seismic activity anywhere in the world. Your creation would then resemble something like a widget, but for at home: a Domestic Widget. 
+<br><br>There is no soldering or coding involved. Using a Google Home, you can configure your widgets using your voice! Let’s explore connectivity in crafts together, and see below how you can experiment yourself!</p><div data-dynamic-mod-container class="header-buttons-wrapper"><a class="big button color1 round" target="_self" href="#how-it-works" >HOW TO</a><a class="button big white round outline" target="_self" href="#video" >SEE VIDEO</a></div>        </div>
+    </div>
+</div>
+    </div>
+    
+        <script>
+        window.mesmerizeSetHeaderTopSpacing();
+    </script>
+                    
+                <div class="header-separator header-separator-bottom header-separator-reverse"><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 1000 100" preserveaspectratio="none">
+	<path class="svg-white-bg" d="M-0 0L1000 0 1000 100z"/>
+</svg></div>                        <div class="header-homepage-arrow-c" >
+            <span class="header-homepage-arrow"> <i class="fa arrow fa-angle-down" aria-hidden="true"></i>
+            </span>
+        </div>
+                    </div>
+        </div>
+        
+    <div class="page-content">
+        <div class="content">
+            <div data-label="LEGACY" data-id="clients--1" data-export-id="clients-1" data-category="clients" class="clients-1 content-section content-section-spacing" id="legacy"  style="background-color: rgb(245, 250, 253); background-image: none;"><div class="gridContainer" > <div class="row middle-sm" ><div data-type="column" class="col-sm-6 space-bottom-xs" >  <p class="lead" >Please note that this project is currently discontinued. This webpage is snapshot for legacy purposes.</p></div> <div class="col-sm-6" ><div data-type="row" class="row spaced-cols center-xs padding-lr" >    <div class="col-xs-3" > </div> </div></div> </div></div> </div><div  data-label="ABOUT" data-id="content-12" data-export-id="content-12" data-category="content" class="content-12 content-section content-section-spacing" id="about" style="background-color: #ffffff; background-image: none;">
+<div  class="">
+<div  class="row text-center">
+<div  class="section-title-col" data-type="column">
+<h2  class="">ABOUT</h2>
+<p  class="lead">Domestic Widgets is a continuously improving toolkit as part of a research project at the Northumbria University in Newcastle. This project explores how we can involve families, you, in the exploration of connected technologies (e.g. the Internet-of-Things) for everyday domestic life. With this focus on exploration of connectivity, we developed the Domestic Widgets toolkit that focusses on crafting – as you and your family might already do. A cardboard base provides some scaffolding (but can equally be discarded!) and a small microcontroller and motor ensure internet connectivity with real-time data sources. You can use a Google Home to configure the widgets using your voice, which allows for continuous&nbsp; adjustments – without the need for coding or programming. This research project aims to learn from your family as you design and iterate on your crafts, because we think you are the experts of your own domestic life. We are intrigued by your experiences, thoughts and designs on connectivity at home, and see crafting as the vehicle to explore and discuss. The research lead is David Verweij, a PhD candidate at Northumbria University in Newcastle. If you are interested in the project, a collaboration or have any other inquiry, please contact me through the form below.
+</p>
+<a class="button blue" href="https://www.northumbria.ac.uk/" target="_blank" data-cp-link="1" rel="noopener">Northumbria</a>
+
+</div>
+</div>
+</div>
+</div><div  data-label="VIDEO" data-id="cta--1" data-export-id="cta-blue-section" data-category="cta" class="cta-blue-section content-section content-section-spacing-medium bg-color1 white-text" id="video" style="background-image: none; background-color: #f5fafd;">
+<div  class="gridContainer">
+<div  class="row middle-xs">
+<div  class="col-sm-8 space-bottom-xs" data-type="column"><iframe  src="https://www.youtube-nocookie.com/embed/RggI7wR4VwQ?controls=0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="allowfullscreen" class="" width="784" height="441" frameborder="0"></iframe>
+<!--<img               class="custom-image" src="./wp-content/uploads/2019/02/in-use-e1550766849301.jpg" alt="" title="in use" />--></div>
+<div  class="col-sm-4 end-sm" data-type="column">
+<h2  class="">3 Minute Video</h2>
+</div>
+</div>
+</div>
+</div><div  data-label="HOW IT WORKS" data-id="testimonials--1" data-export-id="testimonials-5" data-category="testimonials" class="testimonials-5 content-section content-section-spacing" id="how-it-works" style="background-color: #ffffff; background-image: none;">
+<div  class="gridContainer">
+<div  class="row">
+<div  data-type="column" class="section-title-col">
+<h2  class="">CREATING A WIDGET</h2>
+<p  class="lead">A tiny circuit and motor is what brings a Domestic Widgets to life! Using an app on the Google Home you can configure your Widget to behave on real-time data. The craft kit comes with a cardboard base, which (optionally) helps in creating a sturdy base. This is not required, and we would love to see your creative use with or without the cardboard base. Below are a few steps that roughly show how to create one Widget.</p>
+
+</div>
+</div>
+<div  class="row spaced-cols" data-type="row">
+<div  class="col-sm-4 col-md-3">
+<div  class="card y-move bordered" data-type="column">
+
+<img  class="custom-image" src="./wp-content/uploads/2019/02/build-steps1.jpg" alt="" title="build steps1">
+<p  class="text-center">For one Widget, you need some electronic components, and a Google Home.</p>
+
+</div>
+</div>
+<div  class="col-sm-4 col-md-3">
+<div  class="card y-move bordered" data-type="column">
+
+<img  class="custom-image" src="./wp-content/uploads/2019/02/build-steps3.jpg" alt="" title="build steps3">
+<p  class="text-center">You can fold most cardboard, and glue three discs to create a strong motor arm.</p>
+
+</div>
+</div>
+<div  class="col-sm-4 col-md-3">
+<div  class="card y-move bordered" data-type="column">
+
+<img  class="custom-image" src="./wp-content/uploads/2019/02/build-steps4b.jpg" alt="" title="build steps4b">
+<p  class="text-center">Get creative! Explore, tinker and craft to get some fun and interesting moving artefacts.</p>
+
+</div>
+</div>
+<div  class="col-sm-4 col-md-3">
+<div  class="card y-move bordered" data-type="column">
+
+<img  class="custom-image" src="./wp-content/uploads/2019/02/build-steps5.png" alt="" title="build steps5">
+<p  class="text-center">Say “OK Google, talk to Domestic Widgets”, and follow along to configure your Widget!</p>
+
+</div>
+</div>
+</div>
+</div>
+</div><div  data-label="EXAMPLES" data-id="portfolio--1" data-export-id="portfolio-5" data-category="portfolio" class="portfolio-5 content-section content-section-spacing" id="examples" style="background-color: #f5fafd;">
+<div  class="gridContainer">
+<div  class="row text-center">
+<div  class="section-title-col" data-type="column">
+<h2  class="">EXAMPLES</h2>
+<p  class="lead">Here are some examples of Domestic Widgets that already have been made. Some use the cardboard base to provide some structure, others totally disregard the cardboard. We encourage you to try different things, see how they work, and change whenever you want to!</p>
+
+</div>
+</div>
+<div  class="row space-bottom spaced-cols" data-type="row">
+<div  class="col-xs-12 col-sm-4 text-center col-md-4">
+<div  class="card no-padding bordered">
+<div  class="initial-image"><img  data-size="500x333" src="./wp-content/uploads/2019/02/window.gif"></div>
+<div  class="col-xs-12">
+<div  class="space-bottom space-top" data-type="column">
+<p  class="">Tracking the cloudiness in Sunderland. It will position the curtain of
+drops in front of the window if the cloudiness is higher than 50%. Stuck
+on the side of the cupboard with tape.</p>
+
+</div>
+</div>
+</div>
+</div>
+<div  class="col-xs-12 col-sm-4 text-center col-md-4">
+<div  class="card no-padding bordered">
+<div  class="initial-image"><img  data-size="500x333" src="./wp-content/uploads/2019/02/temp_1.gif"></div>
+<div  class="col-xs-12">
+<div  class="space-bottom space-top" data-type="column">
+<p  class="">Indicating the temperature in Gateshead. It moves from cold (0 degrees,
+green) to warm (20 degrees, red). Build with a plastic cup instead of
+the cardboard base.</p>
+
+</div>
+</div>
+</div>
+</div>
+<div  class="col-xs-12 col-sm-4 text-center col-md-4">
+<div  class="card no-padding bordered">
+<div  class="initial-image"><img  data-size="500x333" src="./wp-content/uploads/2019/02/man_1.gif" alt="" title="man_1"></div>
+<div  class="col-xs-12">
+<div  class="space-bottom space-top" data-type="column">
+<p  class="">Alerting if there is a rocket launch in the upcoming day. It will let
+you know by rapidly waving his arms for 10 minutes. Build with both a
+plastic cup and the cardboard base.</p>
+
+</div>
+</div>
+</div>
+</div>
+<div  class="col-xs-12 col-sm-4 text-center col-md-4">
+<div  class="card no-padding bordered">
+<div  class="initial-image"><img  data-size="500x333" src="./wp-content/uploads/2019/02/earth_1.gif"></div>
+<div  class="col-xs-12">
+<div  class="space-bottom space-top" data-type="column">
+<p  class="">Showing the highest magnitude of earthquakes in Japan in the last week.
+The faster it moves, the stronger the earthquake. The long pipe-cleaners
+wobble clearly when something happens.</p>
+
+</div>
+</div>
+</div>
+</div>
+<div  class="col-xs-12 col-sm-4 text-center col-md-4">
+<div  class="card no-padding bordered">
+<div  class="initial-image"><img  data-size="500x333" src="./wp-content/uploads/2019/02/wind_1.gif"></div>
+<div  class="col-xs-12">
+<div  class="space-bottom space-top" data-type="column">
+<p  class="">Indicating the wind speeds outside of Newcastle by bending more severely
+at strong winds, and stretching at lower winds. Pipe-cleaners are
+great!</p>
+
+</div>
+</div>
+</div>
+</div>
+<div  class="col-xs-12 col-sm-4 text-center col-md-4">
+<div  class="card no-padding bordered">
+<div  class="initial-image"><img  data-size="500x333" src="./wp-content/uploads/2019/02/co2_1.gif"></div>
+<div  class="col-xs-12">
+<div  class="space-bottom space-top" data-type="column">
+<p  class="">Indicating the carbon emission of the UK electricity network in Hexham
+from blue (low) to red (high). When it is blue I know it is a good time
+to turn on the washing machine.</p>
+
+</div>
+</div>
+</div>
+</div>
+</div>
+<div  class="row">
+<div  data-type="column" class="col-xs-12 text-center"></div>
+</div>
+</div>
+</div>        </div>
+    </div>
+
+	<div  class='footer footer-simple  paralax'>
+    <div  class='footer-content center-xs'>
+        <div class="gridContainer">
+	        <div class="row middle-xs footer-content-row">
+	            <div class="footer-content-col col-xs-12">
+	                    <p  class="copyright">&copy;&nbsp;&nbsp;2021&nbsp;Domestic Widgets.&nbsp;Built using WordPress and the <a target="_blank" href="https://extendthemes.com/go/built-with-mesmerize/" class="mesmerize-theme-link">Mesmerize Theme</a></p>	            </div>
+	        </div>
+	    </div>
+    </div>
+</div>
+	</div>
+<script type='text/javascript'  defer="defer" src='./wp-content/plugins/mesmerize-companion/theme-data/mesmerize/assets/js/companion.bundle.min.js?ver=1.6.110' id='companion-bundle-js'></script>
+<script type='text/javascript'  defer="defer" src='./wp-includes/js/imagesloaded.min.js?ver=4.1.4' id='imagesloaded-js'></script>
+<script type='text/javascript'  defer="defer" src='./wp-includes/js/masonry.min.js?ver=4.2.2' id='masonry-js'></script>
+<script type='text/javascript'  defer="defer" src='./wp-content/themes/mesmerize/assets/js/theme.bundle.min.js?ver=1.6.81' id='mesmerize-theme-js'></script>
+<script type='text/javascript'  defer="defer" src='./wp-includes/js/wp-embed.min.js?ver=5.6' id='wp-embed-js'></script>
+</body>
+</html>
