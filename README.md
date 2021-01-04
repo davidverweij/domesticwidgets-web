@@ -1,0 +1,1 @@
+This repository contains a snapshot of the Domestic Widgets (wordpress) website for legacy purposes - previously hosted on domesticwidgets.uk. 
